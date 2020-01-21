@@ -164,6 +164,19 @@
                         </div>
                     </div>
 
+
+    <div class="dial_frame mobile" id="dial_frame" style="z-index: 12;" onclick="searchPointMobile(event)">
+            <!-- <img src="{% static 'pollution_map/images/white_bg.png' %}" class="white_bg"> -->
+            <div class="pm25_dial">
+                <img src="{% static 'pollution_map/images/dial_mobile.png' %}" class="pm25_dial_img">
+                <div id="arrow_mobile" style="margin-top: 2rem;">
+                    <img src="{% static 'pollution_map/images/red_arrow.png' %}" class="red_arrow" id="pm25_arrow_mobile">
+                </div>
+                <img src="{% static 'pollution_map/images/black_circle_half.png' %}" class="black_circle" id="black_circle">
+            </div>
+        </div>
+
+
                     
                     {% block layer %}
                     {% endblock %}
